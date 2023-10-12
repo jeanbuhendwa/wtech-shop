@@ -4,8 +4,10 @@ import { IoMdArrowForward } from "react-icons/io";
 import { Fitrash2 } from "react-icons/fi";
 import CartItem from "../components/CartItem";
 import { SidebarContext } from "../contexts/SidebarContext";
+import { CartContext } from "../contexts/CartContext";
 
 const Sidebar = () => {
+  const { cart } = useContext(CartContext);
   const { isOpen, handleClose } = useContext(SidebarContext);
   return (
     <div
@@ -21,6 +23,11 @@ const Sidebar = () => {
         >
           <IoMdArrowForward className="text-2xl" />
         </div>
+      </div>
+      <div>
+        {cart.map((item) => {
+          return <CartItem item={item} key={item.id} />;
+        })}
       </div>
     </div>
   );
