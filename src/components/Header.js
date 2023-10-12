@@ -5,7 +5,7 @@ import { BsBag } from "react-icons/bs";
 const Header = () => {
   const { isOpen, setIsOpen } = useContext(SidebarContext);
   return (
-    <div>
+    <header className="bg-[#F2DFD8]">
       <div>Header</div>
       <div
         onClick={() => setIsOpen(!isOpen)}
@@ -13,7 +13,7 @@ const Header = () => {
       >
         <BsBag className="text-3xl" />
       </div>
-    </div>
+    </header>
   );
 };
 
