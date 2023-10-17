@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 import { FiTrash } from "react-icons/fi";
 import CartItem from "../components/CartItem";
@@ -25,7 +26,7 @@ const Sidebar = () => {
           <IoMdArrowForward className="text-2xl" />
         </div>
       </div>
-      <div className=" flex flex-col gap-y-2 h-[520px] lg:h-[620px] overflow-y-auto overflow-x-hidden border-b">
+      <div className=" flex flex-col gap-y-2 h-[520px] lg:h-[520px] overflow-y-auto overflow-x-hidden border-b">
         {cart.map((item) => {
           return <CartItem item={item} key={item.id} />;
         })}
@@ -42,6 +43,8 @@ const Sidebar = () => {
             <FiTrash />
           </div>
         </div>
+        <button>View Cart</button>
+        <button>Checkout</button>
       </div>
     </div>
   );
