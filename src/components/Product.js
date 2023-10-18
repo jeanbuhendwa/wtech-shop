@@ -4,10 +4,8 @@ import { BsPlus, BsEyeFill } from "react-icons/bs";
 import { CartContext } from "../contexts/CartContext";
 
 const Product = ({ item }) => {
-  console.log(item);
-
   const { addToCart } = useContext(CartContext);
-  const { id, image, category, title, price } = item;
+  const { id, image, title, price } = item;
   return (
     <section>
       <div className="border border-[#D9C7C1] h-[300px] mb-4 relative overflow-hidden group transition">
@@ -35,7 +33,6 @@ const Product = ({ item }) => {
         </div>
       </div>
       <div>
-        <div className="text-sm capitalize text-[#8b7d78] mb-1">{category}</div>
         <Link to={`/product/${id}`}>
           <h2 className="font-semibold mb-1">{title}</h2>
         </Link>
