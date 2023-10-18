@@ -20,9 +20,12 @@ const Header = () => {
       } fixed w-full z-10 transition-all mb-4`}
     >
       <div className="container mx-auto flex items-center justify-between h-full">
-        <div className="text-2xl font-semibold tracking-tighter text-primary">
+        <a
+          href="/"
+          className="text-2xl font-semibold tracking-tighter text-primary"
+        >
           Wtech <span className="text-[#8C5245]">Shop</span>
-        </div>
+        </a>
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative"
