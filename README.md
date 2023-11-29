@@ -1,6 +1,6 @@
 ## WTech Shop
 
-Welcome to Your WTech Shop, a dynamic and versatile online shopping platform. Shop for a wide range of products, including clothing for both men and women, electronics, and jewelry. the store is powered by the Fake Store API.
+Welcome to Your WTech Shop, a versatile online shopping platform. Shop for a wide range of products, including clothing for both men and women, electronics, and jewelry. the store is powered by the Fake Store API.
 
 ### Table of Contents
 
